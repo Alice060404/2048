@@ -472,6 +472,30 @@ hr {
   margin-top: 50px;
 }
 
+.tile-legend {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin: 30px 0 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  img {
+    display: block;
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: $tile-border-radius;
+  }
+}
+
 @include smaller($mobile-threshold) {
   // Redefine variables for smaller screens
   $field-width: 280px;
