@@ -547,3 +547,19 @@ hr {
     }
   }
 }
+
+// Keep the numeric tile values for gameplay and screen readers, but show their images.
+@each $value in 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048 {
+  $image-value: $value;
+  @if $value == 2 {
+    $image-value: 1;
+  }
+
+  .tile.tile-#{$value} .tile-inner {
+    color: transparent;
+    background-image: url("images/#{$image-value}.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}

@@ -756,3 +756,31 @@ hr {
     margin-top: 90px !important; }
   .game-message .lower {
     margin-top: 30px !important; } }
+
+.tile.tile-2 .tile-inner,
+.tile.tile-4 .tile-inner,
+.tile.tile-8 .tile-inner,
+.tile.tile-16 .tile-inner,
+.tile.tile-32 .tile-inner,
+.tile.tile-64 .tile-inner,
+.tile.tile-128 .tile-inner,
+.tile.tile-256 .tile-inner,
+.tile.tile-512 .tile-inner,
+.tile.tile-1024 .tile-inner,
+.tile.tile-2048 .tile-inner {
+  color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.tile.tile-2 .tile-inner { background-image: url("images/1.png"); }
+.tile.tile-4 .tile-inner { background-image: url("images/4.png"); }
+.tile.tile-8 .tile-inner { background-image: url("images/8.png"); }
+.tile.tile-16 .tile-inner { background-image: url("images/16.png"); }
+.tile.tile-32 .tile-inner { background-image: url("images/32.png"); }
+.tile.tile-64 .tile-inner { background-image: url("images/64.png"); }
+.tile.tile-128 .tile-inner { background-image: url("images/128.png"); }
+.tile.tile-256 .tile-inner { background-image: url("images/256.png"); }
+.tile.tile-512 .tile-inner { background-image: url("images/512.png"); }
+.tile.tile-1024 .tile-inner { background-image: url("images/1024.png"); }
+.tile.tile-2048 .tile-inner { background-image: url("images/2048.png"); }
