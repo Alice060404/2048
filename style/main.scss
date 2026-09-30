@@ -472,30 +472,6 @@ hr {
   margin-top: 50px;
 }
 
-.tile-legend {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 12px;
-  margin: 30px 0 0;
-  padding: 0;
-  list-style: none;
-
-  li {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-
-  img {
-    display: block;
-    width: 60px;
-    height: 60px;
-    object-fit: cover;
-    border-radius: $tile-border-radius;
-  }
-}
-
 @include smaller($mobile-threshold) {
   // Redefine variables for smaller screens
   $field-width: 280px;
@@ -574,14 +550,9 @@ hr {
 
 // Keep the numeric tile values for gameplay and screen readers, but show their images.
 @each $value in 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048 {
-  $image-value: $value;
-  @if $value == 2 {
-    $image-value: 1;
-  }
-
   .tile.tile-#{$value} .tile-inner {
     color: transparent;
-    background-image: url("images/#{$image-value}.png");
+    background-image: url("images/#{$value}.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

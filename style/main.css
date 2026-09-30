@@ -773,7 +773,7 @@ hr {
   background-repeat: no-repeat;
   background-size: cover; }
 
-.tile.tile-2 .tile-inner { background-image: url("images/1.png"); }
+.tile.tile-2 .tile-inner { background-image: url("images/2.png"); }
 .tile.tile-4 .tile-inner { background-image: url("images/4.png"); }
 .tile.tile-8 .tile-inner { background-image: url("images/8.png"); }
 .tile.tile-16 .tile-inner { background-image: url("images/16.png"); }
@@ -784,24 +784,3 @@ hr {
 .tile.tile-512 .tile-inner { background-image: url("images/512.png"); }
 .tile.tile-1024 .tile-inner { background-image: url("images/1024.png"); }
 .tile.tile-2048 .tile-inner { background-image: url("images/2048.png"); }
-
-.tile-legend {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 12px;
-  margin: 30px 0 0;
-  padding: 0;
-  list-style: none; }
-
-.tile-legend li {
-  display: flex;
-  align-items: center;
-  gap: 10px; }
-
-.tile-legend img {
-  display: block;
-  width: 60px;
-  height: 60px;
-  object-fit: cover;
-  border-radius: 3px; }
